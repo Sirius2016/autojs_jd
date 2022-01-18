@@ -223,19 +223,19 @@ function enterActivity() {
                 if (textContains("继续环游").exists()) {
                     console.log("继续环游");
                     textContains("继续环游").findOne().click();
-                    sleep(2000);
+                    sleep(3000);
                 } else if (textContains("立即抽奖").exists()) {
                     console.log("关闭立即抽奖");
                     textContains("立即抽奖").findOne().parent().child(1).click();
-                    sleep(2000);
+                    sleep(3000);
                 } else if (textContains("开启今日环游").exists()) {
                     console.log("开启今日环游");
                     textContains("开启今日环游").findOne().click();
-                    sleep(2000);
+                    sleep(3000);
                 } else if (textContains("点我签到").exists()) {
                     console.log("点我签到");
                     textContains("点我签到").findOne().parent().click();
-                    sleep(2000);
+                    sleep(3000);
                     textContains("开心收下").waitFor();
                     textContains("开心收下").findOne().parent().click();
                     sleep(2000);
@@ -250,7 +250,7 @@ function enterActivity() {
                 } else if (noCheck && text("立即前往").exists()) {
                     console.log("前往签到");
                     textContains("立即前往").findOne().parent().click();
-                    sleep(500);
+                    sleep(1000);
                     console.log("点我签到");
                     textContains("点我签到").findOne().parent().click();
                     sleep(1000);
