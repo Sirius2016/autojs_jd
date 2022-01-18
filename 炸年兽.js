@@ -675,7 +675,7 @@ function transitioPperation() {
             } else {
                 text(PASS_LIST[index]).click();
             }
-            sleep(1000);
+            sleep(2000);
         }
     }
 }
@@ -690,6 +690,6 @@ function randomClick(x, y) {
     var ry = random(0, 5);
 
     click(x + rx, y + ry);
-    sleep(2000);
+    sleep(3000);
     return true;
 }
